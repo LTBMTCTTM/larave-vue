@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<div class="container-fluid" id="app"></div>
+<div id="app"></div>
 
 <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>
 <script src="{{ mix('dist/jquery.min.js') }}"></script>

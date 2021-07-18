@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div>
         <header-component></header-component>
         <router-view></router-view>
         <footer-component></footer-component>
@@ -11,13 +11,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 export default {
-    created(){
-        if (this.$isMobile()){
-            require("../../css/mobile-style.css");
-        }else {
-            require('../../css/style.css');
-        }
-    },
+
     components: {
         'header-component': Header,
         'footer-component': Footer,
