@@ -1,5 +1,5 @@
 <template>
-    <div v-if="!this.$isMobile">
+    <div v-if="!this.$isMobile()">
         <!--start footer-->
         <footer class="footer" data-aos="zoom-in-up">
             <div class="containers">
@@ -94,17 +94,19 @@
         </ul>
         <!--end support-->
     </div>
-    <footer v-else class="footer">
-        <div class="nav-footer">
-            <ul>
-                <li class="active"><a href=""><span class="icon-nav"><img src="/mobile-images/icon-home.png"></span> Trang chủ</a></li>
-                <li class=""><a href=""><span class="icon-nav"><img src="/mobile-images/icon-mn.png"></span> Nạp tiền</a></li>
-                <li class=""><a href=""><span class="icon-nav"><img src="/mobile-images/icon-mn.png"></span> Rút tiền</a></li>
-                <li class=""><a href=""><span class="icon-nav"><img src="/mobile-images/icon-promotion.png"></span> Khuyến mãi</a></li>
-                <li class="images/"><a href=""><span class="icon-nav"><img src="/mobile-images/icon-profile.png"></span> Hồ sơ</a></li>
-            </ul>
-        </div>
-    </footer>
+    <div v-else>
+        <footer  class="footer">
+            <div class="nav-footer">
+                <ul>
+                    <li class="active"><a href=""><span class="icon-nav"><img src="/mobile-images/icon-home.png"></span> Trang chủ</a></li>
+                    <li class=""><a href=""><span class="icon-nav"><img src="/mobile-images/icon-mn.png"></span> Nạp tiền</a></li>
+                    <li class=""><a href=""><span class="icon-nav"><img src="/mobile-images/icon-mn.png"></span> Rút tiền</a></li>
+                    <li class=""><a href=""><span class="icon-nav"><img src="/mobile-images/icon-promotion.png"></span> Khuyến mãi</a></li>
+                    <li class="images/"><a href=""><span class="icon-nav"><img src="/mobile-images/icon-profile.png"></span> Hồ sơ</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </template>
 <script>
 export default {
