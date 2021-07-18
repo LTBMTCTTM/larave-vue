@@ -13,7 +13,6 @@
     <link rel="apple-touch-icon" href="" sizes="180x180">
     <meta name="theme-color" content="#000000">
     <link href="{{ mix('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ mix('css/style.css') }}" rel="stylesheet">
     <link href="{{ mix('css/all.css') }}" rel="stylesheet">
     <link href="{{ mix('css/owl.carousel.min.css') }}" rel="stylesheet">
 </head>
